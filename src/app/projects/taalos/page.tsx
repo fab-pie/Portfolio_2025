@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function TaalosPage() {
   return (
     <section className="pt-32 px-6 pb-20">
@@ -11,10 +13,10 @@ export default function TaalosPage() {
           <div className="bg-gray-900/50 p-6 rounded-lg border border-gray-800">
             <div className="grid md:grid-cols-2 gap-4">
               <div className="relative h-72 rounded-lg overflow-hidden">
-                <img src="/images/taalos_tourelle.jpg" alt="Tourelle TAALOS" className="w-full h-full object-cover" />
+                <Image src="/images/taalos_tourelle.jpg" alt="Tourelle TAALOS" fill className="object-cover" />
               </div>
               <div className="relative h-72 rounded-lg overflow-hidden">
-                <img src="/images/taalos_detection.jpg" alt="Système de détection" className="w-full h-full object-cover" />
+                <Image src="/images/taalos_detection.jpg" alt="Système de détection" fill className="object-cover" />
               </div>
             </div>
           </div>
@@ -24,9 +26,9 @@ export default function TaalosPage() {
             <h2 className="text-2xl font-bold mb-4 text-white">À Propos du Projet</h2>
             <p className="leading-relaxed">
               TAALOS est une tourelle de suivi automatique de drones développée au sein de Proteus Group, 
-              l'association de défense de l'ESILV. En tant que chef de projet, 
-              j'ai coordonné la conception et la réalisation d'un système pan/tilt capable de suivre des drones 
-              jusqu'à 2000 mètres de distance. Le projet combine mécanique, électronique, vision par ordinateur 
+              l&apos;association de défense de l&apos;ESILV. En tant que chef de projet, 
+              j&apos;ai coordonné la conception et la réalisation d&apos;un système pan/tilt capable de suivre des drones 
+              jusqu&apos;à 2000 mètres de distance. Le projet combine mécanique, électronique, vision par ordinateur 
               et algorithmes de contrôle avancés pour créer une solution DIY transportable et économique.
             </p>
           </div>
