@@ -581,6 +581,14 @@ export default function AboutPage() {
         { title: "IMPRESSION 3D", text: "Un outil que j'adore utilisé pour créer. Que ce soit des figurines, des boitiers ou des pièces mécaniques, je peux crée tout ce que j'ai besoin." }
       ];
 
+      // Retourne uniquement la partie numérique d'un titre (ex: "VÉTÉRINAIRE 5-6 ANS" -> "5-6").
+      function getNumericPreview(title: string) {
+        const m = title.match(/\d+(?:[-–]\d+)*/g);
+        if (m && m.length) return m.join(', ');
+        // fallback: si pas de chiffres, utilise le premier mot (sans accents si possible)
+        return title.split(' ')[0];
+      }
+
       function makeImageSign(previewText: string, fullTitle: string, fullText: string, id: number) {
         const w = 512, h = 128;
         const cvs = document.createElement('canvas');
@@ -720,7 +728,7 @@ export default function AboutPage() {
       r1_cyl_n1.visible = false;
       scene.add(r1_cyl_n1);
       room1ImageCylinders.push(r1_cyl_n1);
-      const r1_sign_n1 = makeImageSign(room1ImageTexts[0].title, room1ImageTexts[0].title, room1ImageTexts[0].text, 0);
+      const r1_sign_n1 = makeImageSign(getNumericPreview(room1ImageTexts[0].title), room1ImageTexts[0].title, room1ImageTexts[0].text, 0);
       r1_sign_n1.position.set(-r1SegmentWidth / 2, 9.4, r1Half - 5);
       // orienté vers l'intérieur de la salle (côté entrée)
       r1_sign_n1.rotation.y = Math.PI;
@@ -735,7 +743,7 @@ export default function AboutPage() {
       r1_cyl_n2.visible = false;
       scene.add(r1_cyl_n2);
       room1ImageCylinders.push(r1_cyl_n2);
-      const r1_sign_n2 = makeImageSign(room1ImageTexts[1].title, room1ImageTexts[1].title, room1ImageTexts[1].text, 1);
+      const r1_sign_n2 = makeImageSign(getNumericPreview(room1ImageTexts[1].title), room1ImageTexts[1].title, room1ImageTexts[1].text, 1);
       r1_sign_n2.position.set(r1SegmentWidth / 2, 9.4, r1Half - 5);
       // orienté vers l'intérieur de la salle (côté entrée)
       r1_sign_n2.rotation.y = Math.PI;
@@ -751,7 +759,7 @@ export default function AboutPage() {
       r1_cyl_e1.visible = false;
       scene.add(r1_cyl_e1);
       room1ImageCylinders.push(r1_cyl_e1);
-      const r1_sign_e1 = makeImageSign(room1ImageTexts[2].title, room1ImageTexts[2].title, room1ImageTexts[2].text, 2);
+      const r1_sign_e1 = makeImageSign(getNumericPreview(room1ImageTexts[2].title), room1ImageTexts[2].title, room1ImageTexts[2].text, 2);
       r1_sign_e1.position.set(r1Half - 5, 9.4, r1SegmentWidth / 2);
       r1_sign_e1.rotation.y = -Math.PI / 2;
       r1_sign_e1.visible = false;
@@ -765,7 +773,7 @@ export default function AboutPage() {
       r1_cyl_e2.visible = false;
       scene.add(r1_cyl_e2);
       room1ImageCylinders.push(r1_cyl_e2);
-      const r1_sign_e2 = makeImageSign(room1ImageTexts[3].title, room1ImageTexts[3].title, room1ImageTexts[3].text, 3);
+      const r1_sign_e2 = makeImageSign(getNumericPreview(room1ImageTexts[3].title), room1ImageTexts[3].title, room1ImageTexts[3].text, 3);
       r1_sign_e2.position.set(r1Half - 5, 9.4, -r1SegmentWidth / 2);
       r1_sign_e2.rotation.y = -Math.PI / 2;
       r1_sign_e2.visible = false;
@@ -780,7 +788,7 @@ export default function AboutPage() {
       r1_cyl_s1.visible = false;
       scene.add(r1_cyl_s1);
       room1ImageCylinders.push(r1_cyl_s1);
-      const r1_sign_s1 = makeImageSign(room1ImageTexts[4].title, room1ImageTexts[4].title, room1ImageTexts[4].text, 4);
+      const r1_sign_s1 = makeImageSign(getNumericPreview(room1ImageTexts[4].title), room1ImageTexts[4].title, room1ImageTexts[4].text, 4);
       r1_sign_s1.position.set(r1SegmentWidth / 2, 9.4, -r1Half + 5);
       // panneau tourné vers l'intérieur de la salle
       r1_sign_s1.rotation.y = 0;
@@ -795,7 +803,7 @@ export default function AboutPage() {
       r1_cyl_s2.visible = false;
       scene.add(r1_cyl_s2);
       room1ImageCylinders.push(r1_cyl_s2);
-      const r1_sign_s2 = makeImageSign(room1ImageTexts[5].title, room1ImageTexts[5].title, room1ImageTexts[5].text, 5);
+      const r1_sign_s2 = makeImageSign(getNumericPreview(room1ImageTexts[5].title), room1ImageTexts[5].title, room1ImageTexts[5].text, 5);
       r1_sign_s2.position.set(-r1SegmentWidth / 2, 9.4, -r1Half + 5);
       // panneau tourné vers l'intérieur de la salle
       r1_sign_s2.rotation.y = 0;
@@ -811,7 +819,7 @@ export default function AboutPage() {
       r1_cyl_w1.visible = false;
       scene.add(r1_cyl_w1);
       room1ImageCylinders.push(r1_cyl_w1);
-      const r1_sign_w1 = makeImageSign(room1ImageTexts[6].title, room1ImageTexts[6].title, room1ImageTexts[6].text, 6);
+      const r1_sign_w1 = makeImageSign(getNumericPreview(room1ImageTexts[6].title), room1ImageTexts[6].title, room1ImageTexts[6].text, 6);
       r1_sign_w1.position.set(-r1Half + 5, 9.4, -r1SegmentWidth / 2);
       r1_sign_w1.rotation.y = Math.PI / 2;
       r1_sign_w1.visible = false;
@@ -825,7 +833,7 @@ export default function AboutPage() {
       r1_cyl_w2.visible = false;
       scene.add(r1_cyl_w2);
       room1ImageCylinders.push(r1_cyl_w2);
-      const r1_sign_w2 = makeImageSign(room1ImageTexts[7].title, room1ImageTexts[7].title, room1ImageTexts[7].text, 7);
+      const r1_sign_w2 = makeImageSign(getNumericPreview(room1ImageTexts[7].title), room1ImageTexts[7].title, room1ImageTexts[7].text, 7);
       r1_sign_w2.position.set(-r1Half + 5, 9.4, r1SegmentWidth / 2);
       r1_sign_w2.rotation.y = Math.PI / 2;
       r1_sign_w2.visible = false;
@@ -841,7 +849,7 @@ export default function AboutPage() {
       r2_cyl_n1.visible = false;
       scene.add(r2_cyl_n1);
       room2ImageCylinders.push(r2_cyl_n1);
-      const r2_sign_n1 = makeImageSign(room2ImageTexts[0].title, room2ImageTexts[0].title, room2ImageTexts[0].text, 10);
+      const r2_sign_n1 = makeImageSign(getNumericPreview(room2ImageTexts[0].title), room2ImageTexts[0].title, room2ImageTexts[0].text, 10);
       r2_sign_n1.position.set(-r1SegmentWidth / 2, 9.4, r1Half - 5);
       // orienté vers l'intérieur de la salle (côté entrée)
       r2_sign_n1.rotation.y = Math.PI;
@@ -856,7 +864,7 @@ export default function AboutPage() {
       r2_cyl_n2.visible = false;
       scene.add(r2_cyl_n2);
       room2ImageCylinders.push(r2_cyl_n2);
-      const r2_sign_n2 = makeImageSign(room2ImageTexts[1].title, room2ImageTexts[1].title, room2ImageTexts[1].text, 11);
+      const r2_sign_n2 = makeImageSign(getNumericPreview(room2ImageTexts[1].title), room2ImageTexts[1].title, room2ImageTexts[1].text, 11);
       r2_sign_n2.position.set(r1SegmentWidth / 2, 9.4, r1Half - 5);
       // orienté vers l'intérieur de la salle (côté entrée)
       r2_sign_n2.rotation.y = Math.PI;
@@ -872,7 +880,7 @@ export default function AboutPage() {
       r2_cyl_e1.visible = false;
       scene.add(r2_cyl_e1);
       room2ImageCylinders.push(r2_cyl_e1);
-      const r2_sign_e1 = makeImageSign(room2ImageTexts[2].title, room2ImageTexts[2].title, room2ImageTexts[2].text, 12);
+      const r2_sign_e1 = makeImageSign(getNumericPreview(room2ImageTexts[2].title), room2ImageTexts[2].title, room2ImageTexts[2].text, 12);
       r2_sign_e1.position.set(r1Half - 5, 9.4, r1SegmentWidth / 2);
       r2_sign_e1.rotation.y = -Math.PI / 2;
       r2_sign_e1.visible = false;
@@ -886,7 +894,7 @@ export default function AboutPage() {
       r2_cyl_e2.visible = false;
       scene.add(r2_cyl_e2);
       room2ImageCylinders.push(r2_cyl_e2);
-      const r2_sign_e2 = makeImageSign(room2ImageTexts[3].title, room2ImageTexts[3].title, room2ImageTexts[3].text, 13);
+      const r2_sign_e2 = makeImageSign(getNumericPreview(room2ImageTexts[3].title), room2ImageTexts[3].title, room2ImageTexts[3].text, 13);
       r2_sign_e2.position.set(r1Half - 5, 9.4, -r1SegmentWidth / 2);
       r2_sign_e2.rotation.y = -Math.PI / 2;
       r2_sign_e2.visible = false;
@@ -901,7 +909,7 @@ export default function AboutPage() {
       r2_cyl_s1.visible = false;
       scene.add(r2_cyl_s1);
       room2ImageCylinders.push(r2_cyl_s1);
-      const r2_sign_s1 = makeImageSign(room2ImageTexts[4].title, room2ImageTexts[4].title, room2ImageTexts[4].text, 14);
+      const r2_sign_s1 = makeImageSign(getNumericPreview(room2ImageTexts[4].title), room2ImageTexts[4].title, room2ImageTexts[4].text, 14);
       r2_sign_s1.position.set(r1SegmentWidth / 2, 9.4, -r1Half + 5);
       // panneau tourné vers l'intérieur de la salle
       r2_sign_s1.rotation.y = 0;
@@ -916,7 +924,7 @@ export default function AboutPage() {
       r2_cyl_s2.visible = false;
       scene.add(r2_cyl_s2);
       room2ImageCylinders.push(r2_cyl_s2);
-      const r2_sign_s2 = makeImageSign(room2ImageTexts[5].title, room2ImageTexts[5].title, room2ImageTexts[5].text, 15);
+      const r2_sign_s2 = makeImageSign(getNumericPreview(room2ImageTexts[5].title), room2ImageTexts[5].title, room2ImageTexts[5].text, 15);
       r2_sign_s2.position.set(-r1SegmentWidth / 2, 9.4, -r1Half + 5);
       // panneau tourné vers l'intérieur de la salle
       r2_sign_s2.rotation.y = 0;
@@ -932,7 +940,7 @@ export default function AboutPage() {
       r2_cyl_w1.visible = false;
       scene.add(r2_cyl_w1);
       room2ImageCylinders.push(r2_cyl_w1);
-      const r2_sign_w1 = makeImageSign(room2ImageTexts[6].title, room2ImageTexts[6].title, room2ImageTexts[6].text, 16);
+      const r2_sign_w1 = makeImageSign(getNumericPreview(room2ImageTexts[6].title), room2ImageTexts[6].title, room2ImageTexts[6].text, 16);
       r2_sign_w1.position.set(-r1Half + 5, 9.4, -r1SegmentWidth / 2);
       r2_sign_w1.rotation.y = Math.PI / 2;
       r2_sign_w1.visible = false;
@@ -946,7 +954,7 @@ export default function AboutPage() {
       r2_cyl_w2.visible = false;
       scene.add(r2_cyl_w2);
       room2ImageCylinders.push(r2_cyl_w2);
-      const r2_sign_w2 = makeImageSign(room2ImageTexts[7].title, room2ImageTexts[7].title, room2ImageTexts[7].text, 17);
+      const r2_sign_w2 = makeImageSign(getNumericPreview(room2ImageTexts[7].title), room2ImageTexts[7].title, room2ImageTexts[7].text, 17);
       r2_sign_w2.position.set(-r1Half + 5, 9.4, r1SegmentWidth / 2);
       r2_sign_w2.rotation.y = Math.PI / 2;
       r2_sign_w2.visible = false;
@@ -962,7 +970,7 @@ export default function AboutPage() {
       r3_cyl_n1.visible = false;
       scene.add(r3_cyl_n1);
       room3ImageCylinders.push(r3_cyl_n1);
-      const r3_sign_n1 = makeImageSign(room3ImageTexts[0].title, room3ImageTexts[0].title, room3ImageTexts[0].text, 20);
+      const r3_sign_n1 = makeImageSign(getNumericPreview(room3ImageTexts[0].title), room3ImageTexts[0].title, room3ImageTexts[0].text, 20);
       r3_sign_n1.position.set(-r1SegmentWidth / 2, 9.4, r1Half - 5);
       // orienté vers l'intérieur de la salle (côté entrée)
       r3_sign_n1.rotation.y = Math.PI;
@@ -977,7 +985,7 @@ export default function AboutPage() {
       r3_cyl_n2.visible = false;
       scene.add(r3_cyl_n2);
       room3ImageCylinders.push(r3_cyl_n2);
-      const r3_sign_n2 = makeImageSign(room3ImageTexts[1].title, room3ImageTexts[1].title, room3ImageTexts[1].text, 21);
+      const r3_sign_n2 = makeImageSign(getNumericPreview(room3ImageTexts[1].title), room3ImageTexts[1].title, room3ImageTexts[1].text, 21);
       r3_sign_n2.position.set(r1SegmentWidth / 2, 9.4, r1Half - 5);
       // orienté vers l'intérieur de la salle (côté entrée)
       r3_sign_n2.rotation.y = Math.PI;
@@ -993,7 +1001,7 @@ export default function AboutPage() {
       r3_cyl_e1.visible = false;
       scene.add(r3_cyl_e1);
       room3ImageCylinders.push(r3_cyl_e1);
-      const r3_sign_e1 = makeImageSign(room3ImageTexts[2].title, room3ImageTexts[2].title, room3ImageTexts[2].text, 22);
+      const r3_sign_e1 = makeImageSign(getNumericPreview(room3ImageTexts[2].title), room3ImageTexts[2].title, room3ImageTexts[2].text, 22);
       r3_sign_e1.position.set(r1Half - 5, 9.4, r1SegmentWidth / 2);
       r3_sign_e1.rotation.y = -Math.PI / 2;
       r3_sign_e1.visible = false;
@@ -1007,7 +1015,7 @@ export default function AboutPage() {
       r3_cyl_e2.visible = false;
       scene.add(r3_cyl_e2);
       room3ImageCylinders.push(r3_cyl_e2);
-      const r3_sign_e2 = makeImageSign(room3ImageTexts[3].title, room3ImageTexts[3].title, room3ImageTexts[3].text, 23);
+      const r3_sign_e2 = makeImageSign(getNumericPreview(room3ImageTexts[3].title), room3ImageTexts[3].title, room3ImageTexts[3].text, 23);
       r3_sign_e2.position.set(r1Half - 5, 9.4, -r1SegmentWidth / 2);
       r3_sign_e2.rotation.y = -Math.PI / 2;
       r3_sign_e2.visible = false;
