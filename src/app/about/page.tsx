@@ -1590,7 +1590,7 @@ export default function AboutPage() {
       const pointer = new THREE.Vector2();
 
       // simple shake state for the button
-      let buttonShake = { active: false, time: 0, duration: 0.7, intensity: 0.12 };
+      const buttonShake = { active: false, time: 0, duration: 0.7, intensity: 0.12 };
 
       const onCanvasClick = (e: MouseEvent) => {
         if (!canvas || !introDone) return;
