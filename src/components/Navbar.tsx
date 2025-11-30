@@ -65,7 +65,7 @@ export default function Navbar() {
             <FaLinkedin size={22} />
           </a>
           <a
-            href="mailto:fabienpieretti@gmail.com?subject=Contact%20depuis%20le%20portfolio"
+            href="mailto:fabienpieretti@gmail.com?subject=Contact%20depuis%20votre%20portfolio"
             className="hover:text-blue-400 transition"
           >
             <FaEnvelope size={22} />

@@ -9,28 +9,24 @@ export default function TaalosPage() {
         <p className="text-center text-sm text-gray-500 mb-12">Chef de Projet</p>
 
         <div className="space-y-8 text-gray-300">
-          {/* Images du Projet */}
+          {/* Image + Description côte-à-côte */}
           <div className="bg-gray-900/50 p-6 rounded-lg border border-gray-800">
-            <div className="grid md:grid-cols-2 gap-4">
-              <div className="relative h-72 rounded-lg overflow-hidden">
-                <Image src="/images/taalos_tourelle.jpg" alt="Tourelle TAALOS" fill className="object-cover" />
+            <div className="grid gap-6 md:grid-cols-2 items-start">
+              <div className="relative w-full rounded-lg overflow-hidden h-64 md:h-[420px] lg:h-[520px]">
+                <Image src="/images/taalos.jpg" alt="TAALOS" fill className="object-contain" />
               </div>
-              <div className="relative h-72 rounded-lg overflow-hidden">
-                <Image src="/images/taalos_detection.jpg" alt="Système de détection" fill className="object-cover" />
+
+              <div className="space-y-4">
+                <h2 className="text-2xl font-bold mb-2 text-white">À Propos du Projet</h2>
+                <p className="leading-relaxed text-gray-300">
+                  TAALOS est une tourelle de suivi automatique de drones développée au sein de Proteus Group, 
+                  l&apos;association de défense de l&apos;ESILV. En tant que chef de projet, j&apos;ai coordonné la conception
+                  et la réalisation d&apos;un système pan/tilt capable de suivre des drones jusqu&apos;à 2000 mètres de distance.
+                  Le projet combine mécanique, électronique, vision par ordinateur et algorithmes de contrôle avancés
+                  pour créer une solution DIY transportable et économique.
+                </p>
               </div>
             </div>
-          </div>
-
-          {/* Description Principale */}
-          <div className="bg-gray-900/50 p-6 rounded-lg border border-gray-800">
-            <h2 className="text-2xl font-bold mb-4 text-white">À Propos du Projet</h2>
-            <p className="leading-relaxed">
-              TAALOS est une tourelle de suivi automatique de drones développée au sein de Proteus Group, 
-              l&apos;association de défense de l&apos;ESILV. En tant que chef de projet, 
-              j&apos;ai coordonné la conception et la réalisation d&apos;un système pan/tilt capable de suivre des drones 
-              jusqu&apos;à 2000 mètres de distance. Le projet combine mécanique, électronique, vision par ordinateur 
-              et algorithmes de contrôle avancés pour créer une solution DIY transportable et économique.
-            </p>
           </div>
 
           {/* Caractéristiques Techniques */}

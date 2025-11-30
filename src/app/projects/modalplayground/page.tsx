@@ -6,20 +6,7 @@ export default function ModalPlaygroundPage() {
         <p className="text-center text-gray-400 mb-8">Recherche • Projet Collaboratif</p>
 
         <div className="space-y-8 text-gray-300">
-          {/* Images du Projet */}
-          <div className="bg-gray-900/50 p-6 rounded-lg border border-gray-800">
-            <div className="grid md:grid-cols-3 gap-4">
-              <div className="relative h-64 rounded-lg overflow-hidden">
-                <img src="/images/modalplayground_device.jpg" alt="Dispositif haptique" className="w-full h-full object-cover" />
-              </div>
-              <div className="relative h-64 rounded-lg overflow-hidden">
-                <img src="/images/modalplayground_interface.jpg" alt="Interface utilisateur" className="w-full h-full object-cover" />
-              </div>
-              <div className="relative h-64 rounded-lg overflow-hidden">
-                <img src="/images/modalplayground_demo.jpg" alt="Démonstration" className="w-full h-full object-cover" />
-              </div>
-            </div>
-          </div>
+
 
           {/* Description Principale */}
           <div className="bg-gray-900/50 p-6 rounded-lg border border-gray-800">

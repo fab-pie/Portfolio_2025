@@ -581,15 +581,12 @@ export default function AboutPage() {
         { title: "IMPRESSION 3D", text: "Un outil que j'adore utilisé pour créer. Que ce soit des figurines, des boitiers ou des pièces mécaniques, je peux crée tout ce que j'ai besoin." }
       ];
 
-      // Retourne uniquement la partie textuelle d'un titre (ex: "VÉTÉRINAIRE 5-6 ANS" -> "VÉTÉRINAIRE").
       function getNumericPreview(title: string) {
-        // Supprime les chiffres, les tirets de tranche d'âges et le mot 'ANS', puis nettoie les espaces.
         let t = title.replace(/\d+[\s\-–]*\d*\s*(ANS)?/gi, '');
         t = t.replace(/\bANS\b/gi, '');
-        t = t.replace(/[^\p{L}\s'-]/gu, ''); // garde les lettres, espaces, apostrophes et tirets
+        t = t.replace(/[^\p{L}\s'-]/gu, '');
         t = t.replace(/\s+/g, ' ').trim();
         if (t.length > 0) return t;
-        // fallback : premier mot du titre original
         return title.split(' ')[0];
       }
 

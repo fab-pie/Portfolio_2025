@@ -18,7 +18,7 @@ export default function ProjectsPage() {
       image: "/images/TAALOS_project_picture.jpg",
     },
     {
-      title: "ModalPlayground+",
+      title: "ModalPlayground",
       desc: "Outil collaboratif pour prototyper des expériences haptiques spatiales avec tracking UWB",
       image: "/images/modalplayground_project_picture.jpg",
     },
