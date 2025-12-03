@@ -1,6 +1,6 @@
 # Portfolio 2025
 
-🚀 **[Voir le site déployé](https://portfolio-2025-phb4tue2n-fab-pies-projects.vercel.app/)**
+**[Voir le site déployé](https://portfolio-2025-phb4tue2n-fab-pies-projects.vercel.app/)**
 
 Portfolio de mon année 2025
 
