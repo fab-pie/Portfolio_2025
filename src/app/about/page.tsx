@@ -163,10 +163,10 @@ export default function AboutPage() {
       document.addEventListener('keydown', onIntroKeyDown);
 
       const introMessages = [
-        'Bienvenue dans mon monde.',
-        'Retraçons mon parcours.',
-        'Chaque salle correspond à une partie de ma vie.',
-        'Explorez autant que vous voulez'
+        'Bienvenue dans mon monde',
+        'Chaque salle correspond à une partie de ma vie',
+        'Explorez autant que vous voulez',
+        'N\'hésitez pas à cliquer sur des objets pour intéragir',
       ];
 
       const playIntro = async () => {
@@ -1114,14 +1114,14 @@ export default function AboutPage() {
         ctx.lineWidth = 12;
         ctx.strokeRect(6, 6, 500, 500);
         
-        // Texte en français avec mention d'Échap
+        // Texte en français avec mention d'Entrée
         ctx.fillStyle = '#ff0000';
         ctx.strokeStyle = '#000000';
         ctx.lineWidth = 3;
         ctx.font = 'bold 46px Arial';
         ctx.textAlign = 'center';
-        ctx.strokeText('APPUYEZ SUR ÉCHAP', 256, 140);
-        ctx.fillText('APPUYEZ SUR ÉCHAP', 256, 140);
+        ctx.strokeText('APPUYEZ SUR ENTRÉE', 256, 140);
+        ctx.fillText('APPUYEZ SUR ENTRÉE', 256, 140);
         ctx.strokeText('PUIS CLIQUEZ ICI', 256, 210);
         ctx.fillText('PUIS CLIQUEZ ICI', 256, 210);
         
@@ -1479,7 +1479,7 @@ export default function AboutPage() {
         opacity: '0',
         transition: 'opacity 0.2s ease'
       });
-      signHint.textContent = "Appuyez sur Échap puis cliquez pour lire le panneau";
+      signHint.textContent = "Appuyez sur Entrée puis cliquez pour lire le panneau";
       document.body.appendChild(signHint);
 
       const doorHint = document.createElement('div');
@@ -1517,7 +1517,7 @@ export default function AboutPage() {
         opacity: '0',
         transition: 'opacity 0.3s ease'
       });
-      escapeHint.textContent = 'Double click sur Échap pour revenir au menu';
+      escapeHint.textContent = 'Appuyer sur Entrée pour revenir au menu';
       document.body.appendChild(escapeHint);
 
       function showSignOverlay(title: string, text: string) {
@@ -2202,7 +2202,7 @@ export default function AboutPage() {
       document.addEventListener('pointerlockchange', onPointerLockChange);
 
       const onKeyDownEscape = (e: KeyboardEvent) => {
-        if (e.code === 'Escape' && introDone) {
+        if (e.code === 'Enter' && introDone) {
           e.preventDefault();
           window.location.href = '/';
         }

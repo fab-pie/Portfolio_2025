@@ -53,8 +53,11 @@ export default function Navbar() {
         <div className="flex items-center gap-8 mr-16">
           <Link
             href="/about"
-            className="px-4 py-2 bg-gray-800 rounded-full hover:bg-gray-700 transition"
+            className="relative px-8 py-3 text-xl font-bold bg-gradient-to-r from-purple-600 via-pink-500 to-purple-600 rounded-full hover:from-purple-500 hover:via-pink-400 hover:to-purple-500 transition-all shadow-[0_0_20px_rgba(168,85,247,0.6)] hover:shadow-[0_0_30px_rgba(168,85,247,0.8)] animate-pulse overflow-hidden"
           >
+            <span className="absolute top-0 left-1/4 w-2 h-2 bg-white rounded-full animate-ping" style={{ animationDelay: '0s' }}></span>
+            <span className="absolute top-1/2 right-1/4 w-1.5 h-1.5 bg-white rounded-full animate-ping" style={{ animationDelay: '0.3s' }}></span>
+            <span className="absolute bottom-1 left-1/2 w-1 h-1 bg-white rounded-full animate-ping" style={{ animationDelay: '0.6s' }}></span>
             About Me
           </Link>
 
