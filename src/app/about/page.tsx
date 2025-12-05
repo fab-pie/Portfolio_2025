@@ -1120,8 +1120,8 @@ export default function AboutPage() {
         ctx.lineWidth = 3;
         ctx.font = 'bold 46px Arial';
         ctx.textAlign = 'center';
-        ctx.strokeText('APPUYEZ SUR ENTRÉE', 256, 140);
-        ctx.fillText('APPUYEZ SUR ENTRÉE', 256, 140);
+        ctx.strokeText('APPUYEZ SUR ÉCHAP', 256, 140);
+        ctx.fillText('APPUYEZ SUR ÉCHAP', 256, 140);
         ctx.strokeText('PUIS CLIQUEZ ICI', 256, 210);
         ctx.fillText('PUIS CLIQUEZ ICI', 256, 210);
         
@@ -1479,7 +1479,7 @@ export default function AboutPage() {
         opacity: '0',
         transition: 'opacity 0.2s ease'
       });
-      signHint.textContent = "Appuyez sur Entrée puis cliquez pour lire le panneau";
+      signHint.textContent = "Appuyez sur Échap puis cliquez pour lire le panneau";
       document.body.appendChild(signHint);
 
       const doorHint = document.createElement('div');
