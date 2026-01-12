@@ -8,6 +8,12 @@ import PageArrows from "../../components/PageArrows";
 export default function ProjectsPage() {
   const projects = [
     {
+      title: "AMD Robotics",
+      desc: "Dispositif d'aide aux chirurgiens — entraînement par téléopération (lerobot S101)",
+      image: "/images/lerobot.jpg",
+      href: "/hackathons/amd",
+    },
+    {
       title: "EDTH",
       desc: "Tourelle automatique de detection et tracking de drones",
       image: "/images/EDTH_teams.jpg",

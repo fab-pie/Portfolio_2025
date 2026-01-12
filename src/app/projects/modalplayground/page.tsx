@@ -3,7 +3,7 @@ export default function ModalPlaygroundPage() {
     <section className="pt-32 px-6 pb-20">
       <div className="max-w-5xl mx-auto">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 text-center">ModalPlayground</h1>
-        <p className="text-center text-gray-400 mb-8">Recherche • Projet Collaboratif</p>
+        <p className="text-center text-gray-400 mb-8">Recherche • En cours</p>
 
         <div className="space-y-8 text-gray-300">
 
