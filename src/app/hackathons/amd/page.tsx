@@ -10,7 +10,7 @@ export default function AmdPage() {
 				</p>
 
 				<p className="text-gray-300 mb-4">
-					Notre projet (dépôt disponible sur <a className="text-blue-400 underline hover:text-blue-300" href="https://github.com/leogue/AMD_Robotics_Hackathon_2025_LeCoup_De_Pouce" target="_blank" rel="noreferrer">GitHub</a>) consiste en un dispositif utilisant le robot de Hugging Face — le robot <em>lerobot S101</em> — permettant d'entraîner un robot par téléopération.
+					Notre projet (dépôt disponible sur <a className="text-blue-400 underline hover:text-blue-300" href="https://github.com/leogue/AMD_Robotics_Hackathon_2025_LeCoup_De_Pouce" target="_blank" rel="noreferrer">GitHub</a>) consiste en un dispositif utilisant le robot de Hugging Face le robot <em>lerobot S101</em> — permettant d'entraîner un robot par téléopération.
 					Nous avons développé une solution visant à aider les chirurgiens à obtenir rapidement leurs instruments pendant une opération.
 				</p>
 
