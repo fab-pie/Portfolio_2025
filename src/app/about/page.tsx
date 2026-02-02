@@ -549,45 +549,45 @@ export default function AboutPage() {
       const room3ImageSigns: any[] = [];
       const room3ImageCylinders: any[] = [];
       const room1ImageTexts = [
-        { title: "ASTRONAUTE 8-15 ANS", text: "Pour accompagner ma passion de l'astronomie, je voulais évidemmenet devenir astronaute durant mon enfance. Cela s'est dévié plus vers l'aéronautique de manière générale par la suite." },
-        { title: "ATOMIQUE", text: "J'adorais lire des Sciences et Vies et faire des recherches sur comment fonctionnait l'univers atomique, notamment sur la composition des atomes et des nouvelles avancées scientifiques." },
-        { title: "JUDO", text: "J'ai pratiqué le judo depuis mes 3 ans, jusqu'à maintenant. C'était ma manière de pouvoir faire du sport et me défouler chaque semaine." },
-        { title: "BIOLOGIE 8-11 ANS", text: "J'étais passionné de manière générale de ce qu'on ne pouvait pas observé à l'oeil nu, j'empruntais les microscopes de mon collèges pour observer de plus près tout ce que je trouvais. " },
-        { title: "ASTRONOMIE 7-14 ANS", text: "L'astronomie était une de mes grandes passions, j'adorais observer les étoiles, connaitres toutes les constellations et suivre les avancés. J'avais également rejoins un club d'astronomie amateur pour aller plus loin." },
-        { title: "CHARS 6-9 ANS", text: "J'étais très interessé par les vehicules blindés, j'avais appris tout les modèles français, allemand, russe et américain ainsi que leur caractéristique et leur utilisation." },
-        { title: "VÉTÉRINAIRE 5-6 ANS", text: "Ma première passion était autour des animaux, et je voulais donc devenir vétérinaire. Cependant, j'ai vite abandonné cette idée car l'échec dans ce" },
-        { title: "VOITURES 10-12 ANS", text: "J'adorais les voitures, j'avais globalement appris tout les modèles circulant sur le marché ainsi que leurs caractéristiques techniques et leurs performances." }
+        { title: "ASTRONAUTE 8-15 ANS", text: "Pour accompagner ma passion de l'astronomie, je voulais évidemment devenir astronaute durant mon enfance. Cela s'est dévié plus vers l'aéronautique de manière générale par la suite." },
+        { title: "ATOMIQUE", text: "J'adorais lire Sciences et Vie et faire des recherches sur le fonctionnement de l'univers atomique, notamment sur la composition des atomes et les nouvelles avancées scientifiques." },
+        { title: "JUDO", text: "J'ai pratiqué le judo depuis mes 3 ans jusqu'à maintenant. C'était ma manière de faire du sport et de me défouler chaque semaine." },
+        { title: "BIOLOGIE 8-11 ANS", text: "J'étais passionné de manière générale par ce qu'on ne pouvait pas observer à l'œil nu, j'empruntais les microscopes de mon collège pour observer de plus près tout ce que je trouvais." },
+        { title: "ASTRONOMIE 7-14 ANS", text: "L'astronomie était une de mes grandes passions, j'adorais observer les étoiles, connaître toutes les constellations et suivre les avancées. J'avais également rejoint un club d'astronomie amateur pour aller plus loin. Je suis récemment retombé dans cette passion." },
+        { title: "CHARS 6-9 ANS", text: "J'étais très intéressé par les véhicules blindés, j'avais appris tous les modèles français, allemands, russes et américains ainsi que leurs caractéristiques et leur utilisation." },
+        { title: "VÉTÉRINAIRE 5-6 ANS", text: "Ma première passion tournait autour des animaux, et je voulais donc devenir vétérinaire. Cependant, j'ai vite abandonné cette idée car l'échec dans ce domaine m'effrayait." },
+        { title: "VOITURES 10-12 ANS", text: "J'adorais les voitures, j'avais globalement appris tous les modèles circulant sur le marché ainsi que leurs caractéristiques techniques et leurs performances." }
       ];
 
       const room2ImageTexts = [
-        { title: "ÉCHECS", text: "J'ai pu reprendre les échecs et les sudoku que j'avais arreté vers 10 ans. Cela me permettait de m'amuser tout en mettant à contribution ma réflexion." },
-        { title: "BARRAGES", text: "Je voulais travailler dans les énergies durant ma période en prépa, cependant, je me suis rendu compte, que cela ne m'interessais pas tant que ça finalement." },
-        { title: "SCIENCES D'INGÉNIEUR", text: "J'ai beaucoup travailler sur les sciences de l'ingénieur durant cette période, la matière était assez intéressante car on pouvait plus mettre la main à la patte." },
-        { title: "MATHÉMATIQUES", text: "J'étais extrement focus sur les mathématiques durant la prépa, cepandant cela m'agacer de ne pas avoir d'utilisation concret sur tout ce que j'apprenais." },
-        { title: "CENTRALES ÉLECTRIQUES", text: "C'était vraiment la voies que j'imagineais prendre en prépa car j'aimais beaucoup la manière dont fonctionnait les centrales et l'efficacité de cette méthode." },
-        { title: "PANNEAUX SOLAIRES", text: "J'ai pu travailler sur quelques projets avec des panneaux solaires et ce qui m'avait le plus plus était de faire des solars trackers ou la majorité du projet était accès sur la robotique." },
-        { title: "THERMODYNAMIQUE", text: "Matière pour laquelle j'étais le plus investi en prépa car correspondait à ce que je voulais faire plus tard. J'ai cependant arreter de m'y interessé après avoir changer de projet." },
-        { title: "PYTHON", text: "Mes premiers pas sur des languages de programation. M'a permis de découvrir la logique pour programmer et toutes les possibilités que cela offre." }
+        { title: "ÉCHECS", text: "J'ai pu reprendre les échecs et les sudokus que j'avais arrêtés vers 10 ans. Cela me permettait de m'amuser tout en mettant à contribution ma réflexion." },
+        { title: "BARRAGES", text: "Je voulais travailler dans les énergies durant ma période en prépa, cependant je me suis rendu compte que cela ne m'intéressait pas tant que ça finalement." },
+        { title: "MÉCANIQUE", text: "J'ai beaucoup travaillé sur la mécanique durant cette période, la matière était assez intéressante car on pouvait plus mettre la main à la pâte." },
+        { title: "MATHÉMATIQUES", text: "J'étais extrêmement focus sur les mathématiques durant la prépa, cependant ça m'agaçait de ne pas avoir d'utilisation concrète pour tout ce que j'apprenais." },
+        { title: "NUCLÉAIRE", text: "C'était vraiment la voie que j'imaginais prendre en prépa car j'aimais beaucoup la manière dont fonctionnaient les centrales nucléaires et l'efficacité de cette méthode." },
+        { title: "PHOTOVOLTAÏQUE", text: "J'ai pu travailler sur quelques projets photovoltaïques et ce qui m'avait le plus plu était de faire des solar trackers où la majorité du projet était axée sur la robotique." },
+        { title: "THERMODYNAMIQUE", text: "Matière pour laquelle j'étais le plus investi en prépa car elle correspondait à ce que je voulais faire plus tard. J'ai cependant arrêté de m'y intéresser après avoir changé de projet." },
+        { title: "PYTHON", text: "Mes premiers pas sur des langages de programmation. Ça m'a permis de découvrir la logique pour programmer et toutes les possibilités que cela offre." }
       ];
 
       const room3ImageTexts = [
-        { title: "MICROFABRICATION", text: "J'ai adorer pouvoir fabriqué en salle blanche divers type de composants. L'environnement est assez impressionnant et les processus de fabrication son très sympa a réaliser." },
-        { title: "DRONES", text: "Je me suis récemment très interessés au sujet des drones qui sont de plus en plus sur le devant de la scène. Que ce soit lutte anti-drone, pilotage automatisées ou swarm." },
-        { title: "BIOMÉDICAL", text: "J'ai pu réaliser de nombreux dispositifs à but médical ces dernières années, qui combinent de la création de circuit éléctronique, de boitier et d'analyse de données, chose que j'aime bien faire." },
-        { title: "MICROÉLECTRONIQUE", text: "J'adore de manière général crée des nouveaux circuits élécrtoniques, que ce soit sur breadboards, des assemblages de composants ou des PCB entières, et de réaliser un produit complet." },
-        { title: "COMPUTER VISION", text: "Ces derniers mois, j'ai commencer à vraiment m'intéresser à la vision par ordinateur, utilisant des outils comme Mediapipe, OpenCV et YOLOv11 pour la détection d'objets et le suivi en temps réel." },
-        { title: "ROBOTIQUE", text: "C'est la branche qui regroupe tout ce que j'aime en ce moment, beaucoup d'itération de prototype, d'éléctronique, de modèles 3D et de programmation." },
-        { title: "FABLAB", text: "Mon nouvel espace préféré, j'ai accès à tout le matériel que je souhaite pour réaliser mes projets. Je peux également découvrir de nouveaux outils et guider des nouvelles personnes pour devenir des makers." },
-        { title: "IMPRESSION 3D", text: "Un outil que j'adore utilisé pour créer. Que ce soit des figurines, des boitiers ou des pièces mécaniques, je peux crée tout ce que j'ai besoin." }
+        { title: "MICROFABRICATION", text: "J'ai adoré pouvoir fabriquer en salle blanche divers types de composants. L'environnement est assez impressionnant et les processus de fabrication sont très sympas à réaliser." },
+        { title: "AEROSPATIAL", text: "Je suis retombé dans ma passion pour tout ce qui est aérospatial mais plus dans tout ce qui est surveillance, que ce soit à travers des drones, des satellites ou des stations au sol." },
+        { title: "BIOMÉDICAL", text: "J'ai pu réaliser de nombreux dispositifs à but médical ces dernières années, qui combinent création de circuits électroniques, de boîtiers et analyse de données, ce que j'aime bien faire." },
+        { title: "MICROÉLEC", text: "J'adore de manière générale créer de nouveaux circuits électroniques, que ce soit sur breadboards, des assemblages de composants ou des PCB entières, et réaliser un produit complet." },
+        { title: "COMPUTER VISION", text: "Ces derniers mois, j'ai commencé à vraiment m'intéresser à la vision par ordinateur, utilisant des outils comme Mediapipe, OpenCV et YOLOv11 pour la détection d'objets et le suivi en temps réel." },
+        { title: "ROBOTIQUE", text: "C'est la branche qui regroupe tout ce que j'aime en ce moment, beaucoup d'itérations de prototypes, d'électronique, de modèles 3D et de programmation." },
+        { title: "FABLAB", text: "Mon nouvel espace préféré, j'ai accès à tout le matériel que je souhaite pour réaliser mes projets. Je peux également découvrir de nouveaux outils et guider de nouvelles personnes pour devenir des makers." },
+        { title: "IMPRESSION 3D", text: "Un outil que j'adore utiliser pour créer. Que ce soit des figurines, des boîtiers ou des pièces mécaniques, je peux créer tout ce dont j'ai besoin." }
       ];
 
       function getNumericPreview(title: string) {
-        let t = title.replace(/\d+[\s\-–]*\d*\s*(ANS)?/gi, '');
-        t = t.replace(/\bANS\b/gi, '');
-        t = t.replace(/[^\p{L}\s'-]/gu, '');
+        // Enlever seulement les patterns d'âge (ex: "8-15 ANS", "16-18 ANS")
+        let t = title.replace(/\d+[\s\-–]*\d*\s*ANS/gi, '');
+        // Nettoyer les espaces multiples
         t = t.replace(/\s+/g, ' ').trim();
         if (t.length > 0) return t;
-        return title.split(' ')[0];
+        return title;
       }
 
       function makeImageSign(previewText: string, fullTitle: string, fullText: string, id: number) {
@@ -1031,7 +1031,7 @@ export default function AboutPage() {
       r3_cyl_s1.visible = false;
       scene.add(r3_cyl_s1);
       room3ImageCylinders.push(r3_cyl_s1);
-      const r3_sign_s1 = makeImageSign('Recherche', room3ImageTexts[4].title, room3ImageTexts[4].text, 24);
+      const r3_sign_s1 = makeImageSign(getNumericPreview(room3ImageTexts[4].title), room3ImageTexts[4].title, room3ImageTexts[4].text, 24);
       r3_sign_s1.position.set(r1SegmentWidth / 2, 9.4, -r1Half + 5);
       // panneau tourné vers l'intérieur de la salle
       r3_sign_s1.rotation.y = 0;
@@ -1046,7 +1046,7 @@ export default function AboutPage() {
       r3_cyl_s2.visible = false;
       scene.add(r3_cyl_s2);
       room3ImageCylinders.push(r3_cyl_s2);
-      const r3_sign_s2 = makeImageSign('Laboratoire', room3ImageTexts[5].title, room3ImageTexts[5].text, 25);
+      const r3_sign_s2 = makeImageSign(getNumericPreview(room3ImageTexts[5].title), room3ImageTexts[5].title, room3ImageTexts[5].text, 25);
       r3_sign_s2.position.set(-r1SegmentWidth / 2, 9.4, -r1Half + 5);
       // panneau tourné vers l'intérieur de la salle
       r3_sign_s2.rotation.y = 0;
@@ -1062,7 +1062,7 @@ export default function AboutPage() {
       r3_cyl_w1.visible = false;
       scene.add(r3_cyl_w1);
       room3ImageCylinders.push(r3_cyl_w1);
-      const r3_sign_w1 = makeImageSign('Conception', room3ImageTexts[6].title, room3ImageTexts[6].text, 26);
+      const r3_sign_w1 = makeImageSign(getNumericPreview(room3ImageTexts[6].title), room3ImageTexts[6].title, room3ImageTexts[6].text, 26);
       r3_sign_w1.position.set(-r1Half + 5, 9.4, -r1SegmentWidth / 2);
       r3_sign_w1.rotation.y = Math.PI / 2;
       r3_sign_w1.visible = false;
@@ -1076,7 +1076,7 @@ export default function AboutPage() {
       r3_cyl_w2.visible = false;
       scene.add(r3_cyl_w2);
       room3ImageCylinders.push(r3_cyl_w2);
-      const r3_sign_w2 = makeImageSign('Innovation', room3ImageTexts[7].title, room3ImageTexts[7].text, 27);
+      const r3_sign_w2 = makeImageSign(getNumericPreview(room3ImageTexts[7].title), room3ImageTexts[7].title, room3ImageTexts[7].text, 27);
       r3_sign_w2.position.set(-r1Half + 5, 9.4, r1SegmentWidth / 2);
       r3_sign_w2.rotation.y = Math.PI / 2;
       r3_sign_w2.visible = false;
